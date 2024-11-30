@@ -111,6 +111,7 @@ local scripts = {
     {"TrixAde", "https://raw.githubusercontent.com/TrixAde/scripts/main/blox-fruits.lua"},
     {"LuhxDante", "https://raw.githubusercontent.com/luhxDante/blox-fruits-script/main/script.lua"}
 }
+
 local function createDetailedButton(scriptInfo)
     local Button = Instance.new("TextButton")
     Button.Parent = ScrollingFrame
@@ -160,6 +161,14 @@ end
 for i = 1, #scripts do
     createDetailedButton(scripts[i])
 end
+
+local function updateCanvasSize()
+    ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, UIGridLayout.AbsoluteContentSize.Y)
+end
+
+ScrollingFrame.ChildAdded:Connect(updateCanvasSize)
+ScrollingFrame.ChildRemoved:Connect(updateCanvasSize)
+updateCanvasSize()
 
 local function update(input)
     local delta = input.Position - dragStart
