@@ -105,9 +105,12 @@ local scripts = {
     {"OmegaHub", "https://raw.githubusercontent.com/OmegaHub/OmegaHub/main/loader"},
     {"PhantomHub", "https://raw.githubusercontent.com/PhantomHub/PhantomHub/main/loader"},
     {"QuantumHub", "https://raw.githubusercontent.com/QuantumHub/QuantumHub/main/loader"},
-    {"ZenithHub", "https://raw.githubusercontent.com/ZenithHub/ZenithHub/main/loader"}
+    {"ZenithHub", "https://raw.githubusercontent.com/ZenithHub/ZenithHub/main/loader"},
+    {"CleanerJesus", "https://raw.githubusercontent.com/cleanerjesus/Roblox-Blox-Fruits-Script/main/script.lua"},
+    {"Loliso04", "https://raw.githubusercontent.com/loliso04/pilochto04/main/script.lua"},
+    {"TrixAde", "https://raw.githubusercontent.com/TrixAde/scripts/main/blox-fruits.lua"},
+    {"LuhxDante", "https://raw.githubusercontent.com/luhxDante/blox-fruits-script/main/script.lua"}
 }
-
 local function createDetailedButton(scriptInfo)
     local Button = Instance.new("TextButton")
     Button.Parent = ScrollingFrame
